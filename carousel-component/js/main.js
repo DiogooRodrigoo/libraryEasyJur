@@ -3,6 +3,7 @@ function createSlide({ imgSrc, price, name, description, author }) {
   slideElement.classList.add("swiper-slide", "tranding-slide");
 
   slideElement.innerHTML = `
+  <div class="container-book"> 
     <div class="tranding-slide-img">
       <img src="${imgSrc}" alt="${name}" />
     </div>
@@ -13,6 +14,7 @@ function createSlide({ imgSrc, price, name, description, author }) {
         </button>
       </div>
     </div>
+  </div>
   `;
 
   return slideElement;
@@ -59,9 +61,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function openModal(imgSrc, name, description, author) {
   document.getElementById("modalImg").src = imgSrc;
-  document.getElementById("modalName").innerText = name;
+  document.getElementById("modalName").innerText = `Livro: ${name}`;
   document.getElementById("modalDescription").innerText = description;
-  document.getElementById("modalAuthor").innerText = `Author: ${author}`;
+  document.getElementById("modalAuthor").innerText = `Autor: ${author}`;
 
   const modal = document.getElementById("bookModal");
   modal.style.display = "block";
