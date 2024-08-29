@@ -55,17 +55,17 @@ body {
 }
 
 .tranding-slide .tranding-slide-img {
-  width: 100%;
-  height: 42rem; /* Ajuste a altura conforme necessário */
-  overflow: hidden; /* Oculta qualquer parte da imagem que possa sair do contêiner */
-  border-radius: 2rem; /* Mantém o arredondamento dos cantos */
+  width: 42rem;
+  height: 42rem;
+  overflow: hidden;
+  border-radius: 2rem;
   background-color: #bebec2a2;
 }
 
 .tranding-slide .tranding-slide-img img {
-  width: 100%;
+  width: 42rem;
   height: 100%;
-  object-fit: contain; /* Ajusta a imagem dentro do contêiner, preservando as proporções */
+  object-fit: contain;
 }
 
 .tranding-slide .tranding-slide-content {
@@ -79,25 +79,30 @@ body {
 .tranding-slide-content .book-price {
   position: absolute;
   top: 2rem;
-  right: 2rem;
-  color: var(--white);
+  right: -4rem;
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: var(--primary);
 }
 
 .tranding-slide-content .tranding-slide-content-bottom {
   position: absolute;
   bottom: 2rem;
-  left: 2rem;
+  width: 100%;
+}
+
+.tranding-slide-content-bottom .btn-saber-mais {
+  width: 35%;
+  height: 30%;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, -1);
+  cursor: pointer;
+  font-size: 16px;
   color: var(--white);
-}
-
-.food-rating {
-  padding-top: 1rem;
-  display: flex;
-  gap: 1rem;
-}
-
-.rating ion-icon {
-  color: var(--primary);
+  background-color: #a3a3a6a2;
+  font-weight: 400;
 }
 
 .swiper-slide-shadow-left,
@@ -129,7 +134,7 @@ body {
 }
 
 .tranding-slider-control .slider-arrow ion-icon {
-  font-size: 2rem;
+  font-size: 5rem;
   color: #222224;
 }
 
@@ -199,4 +204,65 @@ body {
   #tranding {
     padding: 7rem 0;
   }
+}
+
+/* MODAL */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  margin: 5rem auto;
+  background-color: #fefefe;
+  padding: 20px;
+  border: 1px solid #888;
+  border-radius: 20px;
+  max-width: 50rem;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.close {
+  right: 5rem;
+  color: black;
+  float: right;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: rgb(113, 111, 111);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-img img {
+  position: relative;
+  left: 7.5rem;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.modal-details {
+  margin-top: 15px;
+}
+
+.modal-details h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.modal-details p {
+  margin: 5px 0;
 }

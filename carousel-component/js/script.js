@@ -1,5 +1,4 @@
-// Função para criar um slide
-function createSlide({ imgSrc, price, name, rating }) {
+function createSlide({ imgSrc, price, name, description, author }) {
   const slideElement = document.createElement("div");
   slideElement.classList.add("swiper-slide", "tranding-slide");
 
@@ -10,7 +9,9 @@ function createSlide({ imgSrc, price, name, rating }) {
     <div class="tranding-slide-content">
       <h1 class="book-price">${price}</h1>
       <div class="tranding-slide-content-bottom">
-        <h2 class="book-name">${name}</h2>
+        <button class="btn-saber-mais" onclick="openModal('${imgSrc}', '${name}', '${description}', '${author}')" > 
+        Saiba Mais
+        </button>
       </div>
     </div>
   `;
@@ -18,7 +19,6 @@ function createSlide({ imgSrc, price, name, rating }) {
   return slideElement;
 }
 
-// Carregar dados dos slides e inicializar o Swiper
 document.addEventListener("DOMContentLoaded", () => {
   fetch("js/slides-data.json")
     .then((response) => response.json())
@@ -57,3 +57,26 @@ document.addEventListener("DOMContentLoaded", () => {
       console.error("Erro ao carregar os dados dos slides:", error)
     );
 });
+
+function openModal(imgSrc, name, description, author) {
+  document.getElementById("modalImg").src = imgSrc;
+  document.getElementById("modalName").innerText = name;
+  document.getElementById("modalDescription").innerText = description;
+  document.getElementById("modalAuthor").innerText = `Author: ${author}`;
+
+  const modal = document.getElementById("bookModal");
+  modal.style.display = "block";
+}
+
+const modal = document.getElementById("bookModal");
+const closeModal = document.getElementsByClassName("close")[0];
+
+closeModal.onclick = function () {
+  modal.style.display = "none";
+};
+
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+};
