@@ -1,21 +1,62 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Bootstrap CSS -->
+    <!-- SWIPER BUNDLE CSS -->
     <link
       rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
     />
 
     <!-- CSS -->
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/styles.css" />
 
-    <title>EasyJur - Carrossel de Livros</title>
+    <title>Carrossel - EasyJur</title>
   </head>
-  <body></body>
+  <body>
+    <!-- CONTAINER PRINCIPA;-->
+    <section id="tranding">
+      <div class="container">
+        <h3 class="text-center section-subheading">- Biblioteca EasyJur-</h3>
+        <h1 class="text-center section-heading">Livros Populares</h1>
+      </div>
+
+      <div class="container">
+        <div class="swiper tranding-slider">
+          <div class="swiper-wrapper" id="swiper-wrapper">
+            <!-- Slides serão inseridos aqui pelo JavaScript -->
+          </div>
+
+          <div class="tranding-slider-control">
+            <div class="swiper-button-prev slider-arrow">
+              <ion-icon name="arrow-back-outline"></ion-icon>
+            </div>
+            <div class="swiper-button-next slider-arrow">
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- JS-->
+    <script src="js/script.js"></script>
+
+    <!-- SWIPER -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- IONICONS -->
+    <script
+      type="módulo"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>

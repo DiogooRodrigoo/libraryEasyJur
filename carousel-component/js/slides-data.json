@@ -1,0 +1,51 @@
+[
+  {
+    "imgSrc": "assets/img-1.jpg",
+    "price": "R$: 37,74",
+    "name": "A Biblioteca da Meia-Noite",
+    "description": "A Biblioteca da Meia-Noite é um romance incrível que fala dos infinitos rumos que a vida pode tomar e da busca incessante pelo rumo certo.",
+    "author": "Matt Haig"
+  },
+  {
+    "imgSrc": "assets/img-2.jpg",
+    "price": "R$ 67,40",
+    "name": "É assim que começa",
+    "description": "Todo final tem um começo. Agora em uma edição especial de colecionador, com pintura trilateral e exclusiva para o Brasil, conheça a sequência de É assim que acaba . Da autora best-seller mundial e fenômeno editorial Colleen Hoover, que já vendeu mais de dois milhões de livros no país.",
+    "author": "Colleen Hoover"
+  },
+  {
+    "imgSrc": "assets/img-3.jpg",
+    "price": "R$ 22,99",
+    "name": "Em busca de nós mesmos",
+    "description": "Quem somos? De onde viemos? Para onde vamos? Perguntas manjadas, é verdade. Mas quem nunca pensou nisso pelo menos uma vez na vida? O questionamento sobre nossa existência, origem e destino tem sido tema de profunda reflexão dos maiores pensadores da humanidade ao longo de três mil anos e, mais recentemente, dos cientistas. As perguntas são as mesmas desde que o homem começou a pensar. As respostas não. Muito pelo contrário.",
+    "author": "Clóvis de Barros Filho"
+  },
+  {
+    "imgSrc": "assets/img-4.jpg",
+    "price": "R$ 38,90",
+    "name": "Ikigai: Os cinco passos para encontrar seu propósito de vida e ser mais feliz",
+    "description": "Viver uma vida plena, longa e feliz? Sim, é possível. A fórmula, segundo os japoneses, é encontrar o seu próprio ikigai, que vai ajudar você a definir e apreciar os prazeres da vida. Aqui, você irá descobrir os cinco passos para alcançá-lo e, assim, encontrar satisfação e alegria em tudo aquilo que faz. Esse antigo segredo dos japoneses pode fazer você viver mais, ter mais saúde, ser menos estressado e, principalmente, mais realizado com a sua vida.",
+    "author": "KEN MOGI"
+  },
+  {
+    "imgSrc": "assets/img-5.jpg",
+    "price": "R$ 75,24",
+    "name": "O inferno de Dante",
+    "description": "Nesta extraordinária adaptação em HQ da primeira parte de A Divina Comédia , um clássico que moldou a literatura mundial e o imaginário popular, o leitor acompanhará Dante Alighieri, guiado pelo poeta Virgílio, em sua jornada pelos nove círculos do Inferno na intensa busca por sua amada Beatriz no Paraíso. Testemunhe a coragem e o desespero entrelaçados enquanto Dante enfrenta as profundezas obscuras e desconhecidas.",
+    "author": "Paul Brizzi"
+  },
+  {
+    "imgSrc": "assets/img-6.jpg",
+    "price": "R$ 33,85",
+    "name": "A psicologia financeira: lições atemporais sobre fortuna, ganância e felicidade",
+    "description": "O livro de educação financeira mais comentado dos últimos anos, com mais de 1 milhão de exemplares vendidos no mundo todo!",
+    "author": "Morgan Housel"
+  },
+  {
+    "imgSrc": "assets/img-7.jpg",
+    "price": "R$ 24,71",
+    "name": "#umdiasemreclamar: Descubra por que a gratidão pode mudar a sua vida",
+    "description": "DESCUBRA O PODER DA GRATIDÃO E MUDE A SUA VIDA EM 24 HORAS",
+    "author": "Davi Lago"
+  }
+]
