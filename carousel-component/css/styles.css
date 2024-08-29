@@ -16,7 +16,7 @@
 }
 
 html {
-  font-size: 65.5%;
+  font-size: 62.5%;
   font-family: "Montserrat", sans-serif;
   scroll-behavior: smooth;
 }
@@ -26,65 +26,6 @@ body {
   background: var(--bg);
 }
 
-/*=== HEADER ===*/
-header {
-  display: flex;
-  width: 100%;
-  top: 0;
-  right: 0;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 40px;
-  background-color: transparent;
-}
-
-.logo {
-  font-size: 14px;
-  color: var(--primary);
-  font-weight: bold;
-}
-.navbar {
-  display: flex;
-}
-
-.navbar a {
-  text-decoration: none;
-  color: rgb(33, 32, 32);
-  font-size: 1.1rem;
-  font-weight: 500;
-  padding: 5px 0;
-  margin: 0px 30px;
-  transition: color 0.3s ease;
-}
-
-.navbar a:hover {
-  color: var(--primary);
-}
-
-.navbar ul {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
-
-.navbar a:hover {
-  color: #ff9800;
-}
-
-.btn-contact {
-  padding: 8px 15px;
-  background-color: #ff9800;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
-
-.btn-contato:hover {
-  background-color: #e67e22;
-}
-
-/*=== SLIDER ===*/
 .container {
   max-width: 124rem;
   padding: 0 1rem;
@@ -111,21 +52,13 @@ header {
   width: 37rem;
   height: 42rem;
   position: relative;
-  justify-content: center;
-  align-items: center;
-}
-
-.container-book {
-  border-radius: 20px;
-  background-color: rgba(138, 136, 136, 0.143);
 }
 
 .tranding-slide .tranding-slide-img img {
-  width: 30rem;
+  width: 35rem;
   height: 42rem;
   border-radius: 2rem;
   object-fit: cover;
-  margin-left: 4rem;
 }
 
 .tranding-slide .tranding-slide-content {
@@ -149,7 +82,6 @@ header {
   position: absolute;
   bottom: 2rem;
   width: 100%;
-  height: 50%;
 }
 
 .tranding-slide-content-bottom .btn-saber-mais {
@@ -185,9 +117,7 @@ header {
 }
 
 .tranding-slider-control .slider-arrow {
-  text-align: center;
-  color: var(--primary);
-  background-color: rgba(138, 136, 136, 0.143);
+  background: var(--white);
   width: 3.5rem;
   height: 3.5rem;
   border-radius: 50%;
@@ -196,8 +126,13 @@ header {
   filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
 }
 
+.tranding-slider-control .slider-arrow ion-icon {
+  font-size: 5rem;
+  color: #222224;
+}
+
 .tranding-slider-control .slider-arrow::after {
-  font-size: 2rem;
+  content: "";
 }
 
 .tranding-slider-control .swiper-pagination {
@@ -212,22 +147,6 @@ header {
 
 .tranding-slider-control .swiper-pagination .swiper-pagination-bullet-active {
   background: var(--primary);
-}
-
-/*=== FOOTER ===*/
-footer {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: 20px 0;
-  width: 100%;
-  bottom: 0;
-  left: 0;
-}
-
-footer p {
-  margin: 0;
-  font-size: 14px;
 }
 
 /*=== PONTOS DE INTERRUPÇÃO ===*?
@@ -335,10 +254,8 @@ footer p {
 .modal-details h2 {
   margin: 0;
   font-size: 24px;
-  font-weight: 600;
 }
 
 .modal-details p {
-  font-weight: 200;
-  margin: 8px 0;
+  margin: 5px 0;
 }
