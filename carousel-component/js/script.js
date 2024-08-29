@@ -7,7 +7,6 @@ function createSlide({ imgSrc, price, name, description, author }) {
       <img src="${imgSrc}" alt="${name}" />
     </div>
     <div class="tranding-slide-content">
-      <h1 class="book-price">${price}</h1>
       <div class="tranding-slide-content-bottom">
         <button class="btn-saber-mais" onclick="openModal('${imgSrc}', '${name}', '${description}', '${author}')" > 
         Saiba Mais

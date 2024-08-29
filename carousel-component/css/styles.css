@@ -54,18 +54,11 @@ body {
   position: relative;
 }
 
-.tranding-slide .tranding-slide-img {
-  width: 42rem;
-  height: 42rem;
-  overflow: hidden;
-  border-radius: 2rem;
-  background-color: #bebec2a2;
-}
-
 .tranding-slide .tranding-slide-img img {
-  width: 42rem;
-  height: 100%;
-  object-fit: contain;
+  width: 35rem;
+  height: 42rem;
+  border-radius: 2rem;
+  object-fit: cover;
 }
 
 .tranding-slide .tranding-slide-content {
