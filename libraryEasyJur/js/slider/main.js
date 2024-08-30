@@ -21,7 +21,7 @@ function createSlide({ imgSrc, price, name, description, author }) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  fetch("js/slides-data.json")
+  fetch("js/slider/slides-data.json")
     .then((response) => response.json())
     .then((slides) => {
       const swiperWrapper = document.getElementById("swiper-wrapper");
@@ -58,26 +58,3 @@ document.addEventListener("DOMContentLoaded", () => {
       console.error("Erro ao carregar os dados dos slides:", error)
     );
 });
-
-function openModal(imgSrc, name, description, author) {
-  document.getElementById("modalImg").src = imgSrc;
-  document.getElementById("modalName").innerText = `Livro: ${name}`;
-  document.getElementById("modalDescription").innerText = description;
-  document.getElementById("modalAuthor").innerText = `Autor: ${author}`;
-
-  const modal = document.getElementById("bookModal");
-  modal.style.display = "block";
-}
-
-const modal = document.getElementById("bookModal");
-const closeModal = document.getElementsByClassName("close")[0];
-
-closeModal.onclick = function () {
-  modal.style.display = "none";
-};
-
-window.onclick = function (event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-};
